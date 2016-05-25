@@ -1,0 +1,47 @@
+//- views/index.jade
+doctype html
+html(lang="en")
+	head
+		meta(name="viewport",content="width=device-width, initial-scale=1")
+		title DainarMusic
+	body
+		div(class="container")
+			h1 Welcome to DainarMusic
+			h2 Upload your music
+			input(id="file_upload",type="file",name="upl",data-url="/",multiple)
+			br
+			div(id="progress",class="progress")
+				div(class="bar progress-bar progress-bar-success progress-bar-striped active",style="width: 0%;",role="progressbar",aria-valuemin="0",aria-valuemax="100",aria-valuenow="0")
+			div(id="upl_results")
+				h2 Files just Uploaded:
+				ol
+			h2 Disk space:
+			div(id="disk_usage",class="progress")
+				div(class="bar progress-bar progress-bar-info",style="width: 0%;",role="progressbar",aria-valuemin="0",aria-valuemax="100",aria-valuenow="0")
+			h2 Set the FM frequency:
+			div(id="freqform")
+				form(role="form")
+					div(class="form-group")
+						label(for="freq") Set the frequency (default: 90.0)
+						input(type="number",class="form-control",id="freq")
+			div(id="music_player")
+				button(id="scan_for_music") Start DainarMusic
+				div(class="row")
+					div(class="col-xs-6")
+						h2 Files on Server:
+					div(class="col-xs-6")
+						div(id="refresh_btn")
+				div(id="music_files")
+				
+		
+		script(src="js/jquery-2.1.4.min.js")
+		script(src="js/jquery-ui.min.js")
+		script(src="js/jquery.fileupload.js")
+		script(src="js/jquery.iframe-transport.js")
+		script(src="js/jQueryRotate.js")
+		script(src="js/bootstrap.js")
+		script(src="js/upload.js")
+		script(src="js/my_jquery.js")
+		link(rel="stylesheet",type="text/css",href="css/jquery-ui.min.css")
+		link(rel="stylesheet",type="text/css",href="css/bootstrap.css")
+		link(rel="stylesheet",type="text/css",href="css/style.css")

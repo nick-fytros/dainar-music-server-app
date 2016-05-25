@@ -1,0 +1,66 @@
+body{
+color:white;
+background-color:black;
+}
+
+h1, h2{
+text-align:center;
+}
+
+button,#file_upload,input[type="submit"]{
+border-radius: 15px !important;
+border-color: #BA7800 !important;
+background: rgba(231,92,0,1) !important;
+color:white !important;
+display: block !important;
+margin:0 auto !important;
+}
+
+div#freqform{
+max-width: 120px;
+margin: 0 auto;
+}
+
+div#refresh_btn{
+background: url('../img/refresh_icon.png') no-repeat 0 0;
+width: 42px;
+height: 42px;
+margin: 0 auto;
+}
+
+div.play_img{
+background: url('../img/play_buttons.png') no-repeat 0 0;
+width: 42px;
+height: 42px;
+float: left;
+}
+
+div.stop_img{
+background: url('../img/play_buttons.png') no-repeat -52px 0;
+width: 42px;
+height: 42px;
+margin-left: 10px;
+float: left;
+}
+
+div.pause_img{
+background: url('../img/play_buttons.png') no-repeat 0 -49px;
+width:42px;
+height:42px;
+float: left;
+}
+
+div.delete_file{
+}
+
+div.play_img_pressed{
+background: url('../img/play_buttons_pressed.png') no-repeat 0 0 !important;
+}
+
+div.stop_img_pressed{
+background: url('../img/play_buttons_pressed.png') no-repeat -52px 0 !important;
+}
+
+div.pause_img_pressed{
+background: url('../img/play_buttons_pressed.png') no-repeat 0 -49px !important;
+}
